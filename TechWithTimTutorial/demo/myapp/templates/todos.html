@@ -4,7 +4,7 @@
 <ul>{% comment %} for loop that goes through the todo db (like .map() ) and sends back db rows {% endcomment %}
     {% for todo in todos %}
     <li>
-        {{ todo. title }}: {% if todo.completed %}Completed{% else %}Not completed{% endif %}
+        {{ todo.title }}: {% if todo.completed %}Completed{% else %}Not completed{% endif %}
     </li>
     {% endfor %}
 </ul>
