@@ -15,4 +15,4 @@ def home(request):
 # instance var items made to get all the model's data (functions from django, not classic dom)
 def todos(request):
     items = TodoItem.objects.all()
-    return render(request, "todos.html", {"todos.html": items})
+    return render(request, "todos.html", {"todos": items})
